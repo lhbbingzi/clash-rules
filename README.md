@@ -1,2 +1,1 @@
-# clash-rules
-国内直连清单
+DirectCN.list 是制定哪些域名走国内直连
