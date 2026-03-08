@@ -1,0 +1,6 @@
+# 国内补充直连清单
+# 发现国内站误走代理后，就往下面追加
+
+# 示例：
+# DOMAIN-SUFFIX,example.cn
+# DOMAIN,api.example.com
