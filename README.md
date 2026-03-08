@@ -1,1 +1,1 @@
-DirectCN.list 是制定哪些域名走国内直连
+DirectCN.list 是制定指定域名走国内直连
