@@ -16,6 +16,12 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 
 # =========================
+# Grok
+# =========================
+DOMAIN-SUFFIX,grok.com
+DOMAIN,cdn.grok.com
+
+# =========================
 # Google Gemini
 # =========================
 DOMAIN-SUFFIX,gemini.google.com
