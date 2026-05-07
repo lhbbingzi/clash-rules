@@ -1,34 +1,127 @@
-DOMAIN-KEYWORD,openai
-DOMAIN-SUFFIX,AI.com
-DOMAIN-SUFFIX,cdn.auth0.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,opendns.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,civitai.com
-DOMAIN,bard.google.com
-DOMAIN,ai.google.dev
-DOMAIN,gemini.google.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,statsigapi.net
+# =========================
+# OpenAI / ChatGPT
+# =========================
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,chatgpt.com
+
+# =========================
+# Anthropic Claude
+# =========================
+DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,Anthropic.com
-DOMAIN-SUFFIX,opera-api.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,ciciai.com
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-SUFFIX,grok.com
+
+# =========================
+# Google Gemini
+# =========================
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,ai.google.dev
+
+# =========================
+# Perplexity
+# =========================
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,huggingface.co
-DOMAIN-SUFFIX,character.ai
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,groq.com
-DOMAIN-SUFFIX,mistral.ai
-DOMAIN-SUFFIX,stability.ai
+
+# =========================
+# Midjourney
+# =========================
 DOMAIN-SUFFIX,midjourney.com
-DOMAIN-SUFFIX,you.com
-DOMAIN-SUFFIX,deepseek.com
-DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,mj.run
+
+# =========================
+# Runway
+# =========================
+DOMAIN-SUFFIX,runwayml.com
+
+# =========================
+# Stability AI
+# =========================
+DOMAIN-SUFFIX,stability.ai
+
+# =========================
+# Leonardo AI
+# =========================
+DOMAIN-SUFFIX,leonardo.ai
+
+# =========================
+# Pika
+# =========================
+DOMAIN-SUFFIX,pika.art
+
+# =========================
+# Kling AI
+# =========================
+DOMAIN-SUFFIX,klingai.com
+
+# =========================
+# Luma AI
+# =========================
+DOMAIN-SUFFIX,lumalabs.ai
+
+# =========================
+# ElevenLabs
+# =========================
+DOMAIN-SUFFIX,elevenlabs.io
+
+# =========================
+# Replicate
+# =========================
+DOMAIN-SUFFIX,replicate.com
+
+# =========================
+# HuggingFace
+# =========================
+DOMAIN-SUFFIX,huggingface.co
+
+# =========================
+# Poe
+# =========================
+DOMAIN-SUFFIX,poe.com
+
+# =========================
+# Cursor
+# =========================
+DOMAIN-SUFFIX,cursor.sh
+
+# =========================
+# Bolt
+# =========================
+DOMAIN-SUFFIX,bolt.new
+
+# =========================
+# Lovable
+# =========================
+DOMAIN-SUFFIX,lovable.dev
+
+# =========================
+# Vercel v0
+# =========================
+DOMAIN-SUFFIX,v0.dev
+DOMAIN-SUFFIX,vercel.com
+
+# =========================
+# Figma
+# =========================
+DOMAIN-SUFFIX,figma.com
+
+# =========================
+# AnyGen
+# =========================
+DOMAIN-SUFFIX,anygen.io
+
+# =========================
+# Canva
+# =========================
+DOMAIN-SUFFIX,canva.com
+
+# =========================
+# Notion AI
+# =========================
+DOMAIN-SUFFIX,notion.so
+
+# =========================
+# Sora
+# =========================
+DOMAIN-SUFFIX,sora.com
