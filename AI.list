@@ -1,16 +1,21 @@
 # =========================
-# ChatGPT WebSocket / CDN
+# OpenAI / ChatGPT
 # =========================
-DOMAIN,ws.chatgpt.com
+DOMAIN,chat.openai.com
+DOMAIN,api.openai.com
+DOMAIN,auth0.openai.com
+DOMAIN,cdn.oaistatic.com
+DOMAIN,files.oaiusercontent.com
 DOMAIN,ab.chatgpt.com
+DOMAIN,ws.chatgpt.com
 
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
 
 # =========================
-# Anthropic Claude
+# Claude
 # =========================
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
@@ -19,14 +24,15 @@ DOMAIN-SUFFIX,claude.ai
 # Grok
 # =========================
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
 DOMAIN,cdn.grok.com
 
 # =========================
-# Google Gemini
+# Gemini
 # =========================
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,ai.google.dev
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,ai.google.dev
 
 # =========================
 # Perplexity
@@ -105,7 +111,7 @@ DOMAIN-SUFFIX,bolt.new
 DOMAIN-SUFFIX,lovable.dev
 
 # =========================
-# Vercel v0
+# v0 / Vercel
 # =========================
 DOMAIN-SUFFIX,v0.dev
 DOMAIN-SUFFIX,vercel.com
@@ -114,11 +120,6 @@ DOMAIN-SUFFIX,vercel.com
 # Figma
 # =========================
 DOMAIN-SUFFIX,figma.com
-
-# =========================
-# AnyGen
-# =========================
-DOMAIN-SUFFIX,anygen.io
 
 # =========================
 # Canva
