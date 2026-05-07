@@ -1,10 +1,13 @@
 # =========================
-# OpenAI / ChatGPT
+# ChatGPT WebSocket / CDN
 # =========================
-DOMAIN-SUFFIX,openai.com
+DOMAIN,ws.chatgpt.com
+DOMAIN,ab.chatgpt.com
+
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
 
 # =========================
 # Anthropic Claude
