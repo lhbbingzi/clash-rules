@@ -15,18 +15,18 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 自建-Trojan-01
-  type: trojan
-  server: 你的trojan域名或IP
-  port: 443
-  password: 你的trojan密码
-  sni: 你的trojan域名
-  udp: true
-  skip-cert-verify: false
+  - name: "自建-Trojan-01"
+    type: trojan
+    server: "www.chuangyuan.site"
+    port: 443
+    password: "Noigejkjsg56YU"
+    sni: "www.chuangyuan.site"
+    udp: true
+    skip-cert-verify: false
 proxy-providers:
   airport:
     type: http
-    url: 你的机场订阅链接
+    url: https://d26osgcic9cyru.cloudfront.net/api/v1/client/subscribe?token=55308890386e225377121ccaf6c57c01
     path: ./proxy_providers/airport.yaml
     interval: 3600
     proxy: DIRECT
