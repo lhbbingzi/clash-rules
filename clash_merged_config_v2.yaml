@@ -1,0 +1,208 @@
+# Clash / Mihomo 合并配置模板（精简策略组版）
+# 用法：
+# 1. 把 proxy-providers.airport.url 改成你的机场订阅链接
+# 2. 把 proxies 里的自建 Trojan 信息改成你的真实节点
+# 3. 上传到 GitHub 后，用 raw.githubusercontent.com 链接导入 Clash / Mihomo
+#
+# 本版调整：
+# - 去掉“自动选择”、“其他01”、“其他02”策略组
+# - “全球直连”不再显示为策略组，规则直接使用 DIRECT
+# - “漏网之鱼”不再显示为策略组，MATCH 直接走“节点选择”
+
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: 自建-Trojan-01
+  type: trojan
+  server: 你的trojan域名或IP
+  port: 443
+  password: 你的trojan密码
+  sni: 你的trojan域名
+  udp: true
+  skip-cert-verify: false
+proxy-providers:
+  airport:
+    type: http
+    url: 你的机场订阅链接
+    path: ./proxy_providers/airport.yaml
+    interval: 3600
+    proxy: DIRECT
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自建-Trojan-01
+  - DIRECT
+  use:
+  - airport
+- name: Tiktok节点
+  type: select
+  proxies:
+  - 节点选择
+  - 自建-Trojan-01
+  - DIRECT
+  use:
+  - airport
+- name: Facebook节点
+  type: select
+  proxies:
+  - 节点选择
+  - 自建-Trojan-01
+  - DIRECT
+  use:
+  - airport
+- name: WhatsApp节点
+  type: select
+  proxies:
+  - 节点选择
+  - 自建-Trojan-01
+  - DIRECT
+  use:
+  - airport
+- name: OpenAi节点
+  type: select
+  proxies:
+  - 节点选择
+  - 自建-Trojan-01
+  - DIRECT
+  use:
+  - airport
+rule-providers:
+  local_area_network:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/local_area_network.yaml
+    interval: 86400
+  unban:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    path: ./ruleset/unban.yaml
+    interval: 86400
+  china_domain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./ruleset/china_domain.yaml
+    interval: 86400
+  china_company_ip:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/china_company_ip.yaml
+    interval: 86400
+  china_ip:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+    path: ./ruleset/china_ip.yaml
+    interval: 86400
+  china_media:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+    path: ./ruleset/china_media.yaml
+    interval: 86400
+  download:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    path: ./ruleset/download.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./ruleset/microsoft.yaml
+    interval: 86400
+  tiktok:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
+    path: ./ruleset/tiktok.yaml
+    interval: 86400
+  facebook:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list
+    path: ./ruleset/facebook.yaml
+    interval: 86400
+  whatsapp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Whatsapp.list
+    path: ./ruleset/whatsapp.yaml
+    interval: 86400
+  openai_acl:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+    path: ./ruleset/openai_acl.yaml
+    interval: 86400
+  openai_ai:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/juewuy/ShellClash/master/rules/ai.list
+    path: ./ruleset/openai_ai.yaml
+    interval: 86400
+  qita01:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/lhbbingzi/clash-rules/main/qita01.list
+    path: ./ruleset/qita01.yaml
+    interval: 86400
+  qita02:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/lhbbingzi/clash-rules/main/qita02.list
+    path: ./ruleset/qita02.yaml
+    interval: 86400
+  proxy_lite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./ruleset/proxy_lite.yaml
+    interval: 86400
+  cmblog:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/CMBlog.list
+    path: ./ruleset/cmblog.yaml
+    interval: 86400
+rules:
+- RULE-SET,local_area_network,DIRECT
+- RULE-SET,unban,DIRECT
+- RULE-SET,china_domain,DIRECT
+- RULE-SET,china_company_ip,DIRECT
+- RULE-SET,china_ip,DIRECT
+- RULE-SET,china_media,DIRECT
+- RULE-SET,download,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,microsoft,DIRECT
+- RULE-SET,tiktok,Tiktok节点
+- RULE-SET,facebook,Facebook节点
+- RULE-SET,whatsapp,WhatsApp节点
+- RULE-SET,openai_acl,OpenAi节点
+- RULE-SET,openai_ai,OpenAi节点
+- RULE-SET,qita01,节点选择
+- RULE-SET,qita02,节点选择
+- RULE-SET,proxy_lite,节点选择
+- RULE-SET,cmblog,节点选择
+- GEOIP,CN,DIRECT
+- MATCH,节点选择
