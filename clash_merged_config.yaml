@@ -14,7 +14,7 @@ external-controller: 127.0.0.1:9090
 # 1) 自建节点
 # ========================
 proxies:
-  - name: "自建-Trojan-01"
+  - name: "美国服务器01"
     type: trojan
     server: "www.chuangyuan.site"
     port: 443
@@ -23,23 +23,7 @@ proxies:
     udp: true
     skip-cert-verify: false
 
-# 如果你的 Trojan 是 WS/CDN 模式，用下面这一段替换上面的普通 Trojan：
-# proxies:
-#   - name: "自建-Trojan-CDN-01"
-#     type: trojan
-#     server: "你的CDN域名"
-#     port: 443
-#     password: "你的trojan密码"
-#     sni: "你的回源域名"
-#     network: ws
-#     ws-opts:
-#       path: "/你的path"
-#       headers:
-#         Host: "你的回源域名"
-#     udp: true
-#     skip-cert-verify: false
 
-# ========================
 # 2) 机场订阅
 # ========================
 proxy-providers:
