@@ -14,7 +14,7 @@ external-controller: 127.0.0.1:9090
 # 1) 自建节点
 # ========================
 proxies:
-  - name: "美国服务器01"
+  - name: "自建-Trojan-01"
     type: trojan
     server: "www.chuangyuan.site"
     port: 443
