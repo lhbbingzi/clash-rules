@@ -1,137 +1,87 @@
-# =========================
-# OpenAI / ChatGPT
-# =========================
-DOMAIN,chat.openai.com
-DOMAIN,api.openai.com
-DOMAIN,auth0.openai.com
-DOMAIN,cdn.oaistatic.com
-DOMAIN,files.oaiusercontent.com
-DOMAIN,ab.chatgpt.com
-DOMAIN,ws.chatgpt.com
-
-DOMAIN-SUFFIX,chatgpt.com
+# OpenAI / ChatGPT / Sora / Codex
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 
-# =========================
-# Claude
-# =========================
+# Claude / Anthropic
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
 
-# =========================
-# Grok
-# =========================
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN,cdn.grok.com
-
-# =========================
-# Gemini
-# =========================
+# Gemini / Google AI
 DOMAIN,gemini.google.com
-DOMAIN,generativelanguage.googleapis.com
+DOMAIN,aistudio.google.com
 DOMAIN,ai.google.dev
+DOMAIN,generativelanguage.googleapis.com
 
-# =========================
+# Grok / xAI
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+
 # Perplexity
-# =========================
 DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
 
-# =========================
-# Midjourney
-# =========================
-DOMAIN-SUFFIX,midjourney.com
-DOMAIN-SUFFIX,mj.run
-
-# =========================
-# Runway
-# =========================
-DOMAIN-SUFFIX,runwayml.com
-
-# =========================
-# Stability AI
-# =========================
-DOMAIN-SUFFIX,stability.ai
-
-# =========================
-# Leonardo AI
-# =========================
-DOMAIN-SUFFIX,leonardo.ai
-
-# =========================
-# Pika
-# =========================
-DOMAIN-SUFFIX,pika.art
-
-# =========================
-# Kling AI
-# =========================
-DOMAIN-SUFFIX,klingai.com
-
-# =========================
-# Luma AI
-# =========================
-DOMAIN-SUFFIX,lumalabs.ai
-
-# =========================
-# ElevenLabs
-# =========================
-DOMAIN-SUFFIX,elevenlabs.io
-
-# =========================
-# Replicate
-# =========================
-DOMAIN-SUFFIX,replicate.com
-
-# =========================
-# HuggingFace
-# =========================
-DOMAIN-SUFFIX,huggingface.co
-
-# =========================
 # Poe
-# =========================
 DOMAIN-SUFFIX,poe.com
 
-# =========================
+# Microsoft Copilot
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+
+# DeepSeek
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,deepseek.ai
+
+# Qwen / 阿里通义
+DOMAIN-SUFFIX,qwen.ai
+DOMAIN,chat.qwen.ai
+DOMAIN,dashscope.aliyuncs.com
+
+# Kimi / Moonshot
+DOMAIN-SUFFIX,kimi.com
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN,kimi.moonshot.cn
+
+# MiniMax
+DOMAIN-SUFFIX,minimaxi.com
+DOMAIN-SUFFIX,minimax.chat
+DOMAIN-SUFFIX,minimax.io
+
+# Groq，不是 Grok，是另一个 AI API 平台
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,groqcloud.com
+
+# Mistral
+DOMAIN-SUFFIX,mistral.ai
+
+# Hugging Face
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+
 # Cursor
-# =========================
+DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
+DOMAIN,api2.cursor.sh
 
-# =========================
-# Bolt
-# =========================
-DOMAIN-SUFFIX,bolt.new
+# Windsurf / Codeium
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,codeiumdata.com
 
-# =========================
-# Lovable
-# =========================
-DOMAIN-SUFFIX,lovable.dev
+# Replit AI
+DOMAIN-SUFFIX,replit.com
+DOMAIN-SUFFIX,replit.dev
 
-# =========================
-# v0 / Vercel
-# =========================
-DOMAIN-SUFFIX,v0.dev
-DOMAIN-SUFFIX,vercel.com
+# Meta AI / Llama
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
 
-# =========================
-# Figma
-# =========================
-DOMAIN-SUFFIX,figma.com
-
-# =========================
-# Canva
-# =========================
-DOMAIN-SUFFIX,canva.com
-
-# =========================
-# Notion AI
-# =========================
-DOMAIN-SUFFIX,notion.so
-
-# =========================
-# Sora
-# =========================
-DOMAIN-SUFFIX,sora.com
+# Cohere
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,cohere.ai
